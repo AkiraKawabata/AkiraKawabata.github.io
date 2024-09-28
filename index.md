@@ -8,7 +8,7 @@ Research Engineer at The Asahi Shimbun Company.
 
 ## Research Interests
 
-- **Natural Language Processing:** Inference-oriented Language Understanding 
+- **Natural Language Processing:** Inference-based Language Understanding 
 
 ## News
 
