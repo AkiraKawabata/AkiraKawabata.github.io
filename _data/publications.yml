@@ -6,7 +6,7 @@ main:
     conference: In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, 2024.
     code: 
     paper: 
-    image: ./assets/img/teaser_example.png
+    image: ./assets/img/reps.png
     notes: To appear
 
   - title: "Evaluating the Rationale Understanding of Critical Reasoning in Logical Reading Comprehension"
@@ -15,4 +15,4 @@ main:
     conference: In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, 2023.
     code: https://github.com/nii-cl/rule
     paper: https://aclanthology.org/2023.emnlp-main.9/
-    image: ./assets/img/teaser_example.png
+    image: ./assets/img/rule.png
