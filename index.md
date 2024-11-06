@@ -8,7 +8,7 @@ Research Engineer at The Asahi Shimbun Company.
 
 ## Research Interests
 
-- **Natural Language Processing:** Inference-based Language Understanding 
+- **Natural Language Processing:** Robust Reasoning
 
 ## News
 
@@ -26,3 +26,6 @@ Research Engineer at The Asahi Shimbun Company.
 ## Education
 - 2021.4 - 2023.3 M.Eng., Nara Institute of Science and Technology (NAIST) (Watanabe Lab.)
 - 2016.4 - 2021.3 B.A., Hitotsubashi University
+
+## Honors
+- Young Researcher's Encouragement Award, the 29th Annual Meeting of the Association of Natural Language Processing, 2023.
