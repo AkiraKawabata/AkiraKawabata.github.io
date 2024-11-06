@@ -5,9 +5,9 @@ main:
     conference_short: EMNLP
     conference: In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, 2024.
     code: 
-    paper: 
+    paper: https://arxiv.org/abs/2410.04838
     image: ./assets/img/reps.png
-    notes: To appear
+    # notes: To appear
 
   - title: "Evaluating the Rationale Understanding of Critical Reasoning in Logical Reading Comprehension"
     authors: <strong>Akira Kawabata</strong>, Saku Sugawara
