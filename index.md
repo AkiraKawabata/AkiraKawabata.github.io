@@ -27,5 +27,5 @@ Research Engineer at The Asahi Shimbun Company.
 - 2021.4 - 2023.3 M.Eng., Nara Institute of Science and Technology (NAIST) (Watanabe Lab.)
 - 2016.4 - 2021.3 B.A., Hitotsubashi University
 
-## Honors
+## Awards & Honors
 - Young Researcher's Encouragement Award, the 29th Annual Meeting of the Association of Natural Language Processing, 2023.
