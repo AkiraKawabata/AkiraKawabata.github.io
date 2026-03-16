@@ -1,0 +1,78 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlist[itemize]{leftmargin=1.25em,itemsep=0.2em,topsep=0.2em}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.8em}{0.4em}
+\hypersetup{colorlinks=true,urlcolor=blue!50!black}
+
+\newcommand{\entry}[2]{
+  \noindent
+  \begin{minipage}[t]{0.76\textwidth}
+    \vspace{0pt}
+    \textbf{#1}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.22\textwidth}
+    \vspace{0pt}
+    \raggedright #2
+  \end{minipage}\par
+}
+
+\begin{document}
+
+{\LARGE \textbf{Akira Kawabata}}\\
+Ph.D. student
+
+\vspace{0.35em}
+\href{mailto:kwbt0206@gmail.com}{kwbt0206@gmail.com}
+\enspace $|$ \enspace
+\href{https://github.com/AkiraKawabata}{github.com/AkiraKawabata}
+\enspace $|$ \enspace
+\href{https://www.linkedin.com/in/akira-kawabata-4b0bb7203/}{LinkedIn}
+\enspace $|$ \enspace
+\href{https://scholar.google.com/citations?user=rP1K2-UAAAAJ}{Google Scholar}
+
+\section*{Research Interests}
+Scalable oversight, synthetic data generation
+
+\section*{Work Experience}
+\entry{Research Engineer, The Asahi Shimbun Company}{Apr.\ 2023 -- Mar.\ 2026}
+
+\section*{Education}
+\entry{Ph.D. student, Department of Informatics, The Graduate University for Advanced Studies, SOKENDAI\ (Supervisor: Saku Sugawara)}{Apr.\ 2026 -- Present}
+\entry{M.Eng., Nara Institute of Science and Technology (Supervisor: Taro Watanabe)}{Apr.\ 2021 -- Mar.\ 2023}
+\entry{B.A., Hitotsubashi University}{Apr.\ 2016 -- Mar.\ 2021}
+
+\section*{Publications}
+\begin{itemize}
+  \item \textbf{Rationale-Aware Answer Verification by Pairwise Self-Evaluation}. Akira Kawabata, Saku Sugawara. In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2024.
+  \href{https://aclanthology.org/2024.emnlp-main.905/}{Paper}
+  \enspace $|$ \enspace
+  \href{https://github.com/nii-cl/rule}{Code}
+
+  \item \textbf{Evaluating the Rationale Understanding of Critical Reasoning in Logical Reading Comprehension}. Akira Kawabata, Saku Sugawara. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2023.
+  \href{https://aclanthology.org/2023.emnlp-main.9/}{Paper}
+  \enspace $|$ \enspace
+  \href{https://github.com/AkiraKawabata/REPS}{Code}
+\end{itemize}
+
+\section*{Awards \& Scholarships}
+\begin{itemize}
+  \item Young Researcher's Encouragement Award, the 29th Annual Meeting of the Association of Natural Language Processing, 2023.
+  \item International News Media Association (INMA) 30 Under 30 Awards, 2025.
+  \item Japan Society for the Promotion of Science (JSPS) Research Fellowship
+  for Young Scientists (DC1), 2026--Present.
+\end{itemize}
+
+\end{document}
