@@ -76,3 +76,4 @@ exclude:
   - cv/
   - vendor/
   - _site/
+  - assets/files/cv_asof_202603.pdf

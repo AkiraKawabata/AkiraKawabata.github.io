@@ -1,5 +1,6 @@
 ---
 layout: homepage
+title: Akira Kawabata
 ---
 
 ## About Me
