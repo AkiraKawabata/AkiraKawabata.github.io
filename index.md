@@ -33,4 +33,4 @@ Scalable oversight, synthetic data generation
 ## Awards & Scholarships
 - Young Researcher's Encouragement Award, the 29th Annual Meeting of the Association of Natural Language Processing, 2023.
 - International News Media Association (INMA) 30 Under 30 Awards, 2025.
-- Japan Society for the Promotion of Science (JSPS) Research Fellowship for Young Scientists (DC1), 2026 to Present.
+- SOKENDAI Special Researcher Program (supported by JST BOOST), 2026 to Present.
