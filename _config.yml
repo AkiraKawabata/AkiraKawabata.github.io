@@ -1,11 +1,11 @@
 # Basic Information 
 lang: en
 title: Akira Kawabata
-tagline: Ph.D. student at SOKENDAI
+tagline: Ph.D. student at SOKENDAI / NII
 position: Ph.D. student
-affiliation: The Graduate University for Advanced Studies, SOKENDAI
+affiliation: SOKENDAI / NII
 affiliation_link: https://www.soken.ac.jp/en/
-email: kwbt0206@gmail.com
+email: kwbt0206@gmail.com / akira@nii.ac.jp
 url: https://akirakawabata.github.io
 logo: /assets/img/avatar.png
 author:
@@ -20,7 +20,7 @@ social:
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Akira Kawabata, natural language processing, large language models, scalable oversight, synthetic data generation, SOKENDAI
-description: Personal academic website of Akira Kawabata, a Ph.D. student at SOKENDAI working on scalable oversight and synthetic data generation.
+description: Personal academic website of Akira Kawabata, a Ph.D. student at SOKENDAI / NII working on scalable oversight and synthetic data generation.
 canonical: https://akirakawabata.github.io/
 google_site_verification: G4NvlpwOW6dMkQfcDxTNHcmjxHEKsZZIh--nPJuk8vs
 
