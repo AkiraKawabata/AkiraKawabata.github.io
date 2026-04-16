@@ -1,5 +1,15 @@
 main:
 
+  - title: "C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences"
+    authors: <strong>Akira Kawabata</strong>, Saku Sugawara
+    conference_short: ACL
+    conference: In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2604.13618
+    paper: https://arxiv.org/abs/2604.13618
+    code: https://github.com/asahi-research/C2
+    image: ./assets/img/c2.png
+    notes: To appear
+
   - title: Rationale-Aware Answer Verification by Pairwise Self-Evaluation
     authors: <strong>Akira Kawabata</strong>, Saku Sugawara
     conference_short: EMNLP
