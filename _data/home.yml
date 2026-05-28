@@ -9,14 +9,14 @@ about: >-
 advisor: Saku Sugawara
 
 interests:
-  - Scalable oversight
-  - Synthetic data generation
+  - Scalable Oversight
+  - Alignment
 
 news:
   - date: Apr 2026
     body: Our paper on scalable rubric-augmented reward modeling is accepted to ACL 2026.
   - date: Mar 2025
-    body: Received the INMA 30 Under 30 Award for work bridging research and journalism.
+    body: Received the INMA 30 Under 30 Award.
   - date: Sep 2024
     body: Our paper on LLM-based rationale verification is accepted to EMNLP 2024.
 

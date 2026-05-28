@@ -102,12 +102,6 @@ button:focus-visible {
   letter-spacing: -.005em;
   text-decoration: none;
 }
-.eg-crest-role {
-  font-size: 11px;
-  color: var(--faint);
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
 .eg-nav {
   display: flex;
   gap: 28px;
