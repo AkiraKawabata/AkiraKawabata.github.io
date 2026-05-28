@@ -165,14 +165,16 @@ button:focus-visible {
   max-width: 460px;
 }
 /* Inline prose links — hairline underline that darkens on hover */
-.eg-about a {
+.eg-about a,
+.eg-award-row a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   text-decoration-color: var(--faint);
   transition: text-decoration-color .2s ease;
 }
-.eg-about a:hover { text-decoration-color: var(--ink); }
+.eg-about a:hover,
+.eg-award-row a:hover { text-decoration-color: var(--ink); }
 
 .eg-meta {
   margin-top: 24px;
