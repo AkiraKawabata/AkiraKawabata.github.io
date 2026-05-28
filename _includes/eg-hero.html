@@ -1,0 +1,36 @@
+<div class="eg-wrap">
+  <section class="eg-hero" data-reveal aria-label="Profile">
+    <div class="eg-hero-avatar">
+      <img class="eg-avatar" src="{{ site.avatar | replace: './', '/' | relative_url }}" alt="Portrait of {{ site.title }}">
+    </div>
+
+    <div class="eg-hero-profile">
+      <div class="eg-eyebrow">01 — Profile</div>
+      <h1 class="eg-name">Akira<br>Kawabata</h1>
+      <p class="eg-about">{{ site.data.home.about }}</p>
+      <dl class="eg-meta">
+        <dt>Position</dt><dd>{{ site.position }}</dd>
+        <dt>Affiliation</dt><dd>{{ site.affiliation }}</dd>
+        {% if site.data.home.advisor %}<dt>Advisor</dt><dd>{{ site.data.home.advisor }}</dd>{% endif %}
+        <dt>Email</dt><dd class="mono">{{ site.email }}</dd>
+      </dl>
+    </div>
+
+    <div class="eg-hero-interests">
+      <div class="eg-eyebrow">02 — Research Interests</div>
+      <ul class="eg-interests">
+        {% for it in site.data.home.interests %}
+        <li>
+          <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          <span class="label">{{ it }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="eg-ctas">
+        {% if site.cv_link %}<a class="eg-btn eg-btn--primary" href="{{ site.cv_link | relative_url }}">Curriculum Vitae ↗</a>{% endif %}
+        {% if site.google_scholar %}<a class="eg-btn" href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+        {% if site.github_link %}<a class="eg-btn" href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      </div>
+    </div>
+  </section>
+</div>

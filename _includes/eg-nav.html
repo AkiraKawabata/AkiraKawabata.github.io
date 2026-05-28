@@ -1,0 +1,15 @@
+<header class="eg-top" data-reveal>
+  <div class="eg-wrap eg-top-inner">
+    <div class="eg-crest">
+      <span class="eg-mark" aria-hidden="true">A</span>
+      <a class="eg-crest-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <span class="eg-crest-role">Researcher · NLP</span>
+    </div>
+    <nav class="eg-nav" aria-label="Primary">
+      <a class="eg-link is-active" href="{{ '/' | relative_url }}">Home</a>
+      <a class="eg-link" href="#publications">Publications</a>
+      {% if site.cv_link %}<a class="eg-link" href="{{ site.cv_link | relative_url }}">CV</a>{% endif %}
+      {% if site.google_scholar %}<a class="eg-link" href="{{ site.google_scholar }}" target="_blank" rel="noopener">Scholar ↗</a>{% endif %}
+    </nav>
+  </div>
+</header>

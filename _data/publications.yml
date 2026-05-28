@@ -3,28 +3,55 @@ main:
   - title: "C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences"
     authors: <strong>Akira Kawabata</strong>, Saku Sugawara
     conference_short: ACL
+    year: 2026
     conference: In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, 2026.
     pdf: https://arxiv.org/abs/2604.13618
     paper: https://arxiv.org/abs/2604.13618
     code: https://github.com/asahi-research/C2
     image: ./assets/img/c2.png
     notes: To appear
+    tldr: >-
+      We turn each binary preference pair into an automatically-generated rubric,
+      so a single label scales into many fine-grained supervision signals. The
+      resulting reward models align language models more reliably with less
+      labeled data.
+    tags:
+      - reward modeling
+      - alignment
+      - synthetic data
 
   - title: Rationale-Aware Answer Verification by Pairwise Self-Evaluation
     authors: <strong>Akira Kawabata</strong>, Saku Sugawara
     conference_short: EMNLP
+    year: 2024
     conference: In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, 2024.
     pdf: https://aclanthology.org/2024.emnlp-main.905/
     code: https://github.com/nii-cl/rule
     paper: https://aclanthology.org/2024.emnlp-main.905/
     image: ./assets/img/reps.png
-    # notes: To appear
+    tldr: >-
+      A verifier that compares pairs of rationales — not just final answers —
+      catches the cases where an LLM is right for the wrong reason. Consistent
+      gains across reasoning benchmarks where surface answers under-discriminate.
+    tags:
+      - reasoning
+      - verification
+      - self-evaluation
 
   - title: "Evaluating the Rationale Understanding of Critical Reasoning in Logical Reading Comprehension"
     authors: <strong>Akira Kawabata</strong>, Saku Sugawara
     conference_short: EMNLP
+    year: 2023
     conference: In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing <strong>(EMNLP)</strong>, 2023.
     pdf: https://aclanthology.org/2023.emnlp-main.9/
     code: https://github.com/AkiraKawabata/REPS
     paper: https://aclanthology.org/2023.emnlp-main.9/
     image: ./assets/img/rule.png
+    tldr: >-
+      A benchmark that probes whether models actually understand the rationales
+      behind critical-reasoning answers, rather than memorising answer patterns.
+      A persistent rationale-level gap shows up across modern LLMs.
+    tags:
+      - evaluation
+      - reasoning
+      - benchmark

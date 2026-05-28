@@ -1,0 +1,40 @@
+<div class="eg-wrap">
+  <section class="eg-section" id="publications" data-reveal aria-labelledby="pubs-title">
+    <div>
+      <div class="eg-sec-num">04 · Publications</div>
+      <h2 class="eg-sec-title" id="pubs-title">Selected Papers</h2>
+    </div>
+    <div>
+      <div class="eg-pubs">
+        {% for p in site.data.publications.main %}
+        <a class="eg-pub" href="{{ p.pdf }}" target="_blank" rel="noopener"
+           data-venue="{{ p.conference_short }}" data-year="{{ p.year }}"
+           data-tldr="{{ p.tldr | strip_newlines | strip | replace: '"', '&quot;' }}"
+           data-tags="{{ p.tags | join: '|' }}">
+          <div class="eg-pub-thumb">
+            <img src="{{ p.image | replace: './', '/' | relative_url }}" alt="" loading="lazy">
+          </div>
+          <div class="eg-pub-meta">
+            <span>{{ p.conference_short }} · {{ p.year }}</span>
+            <span>№ {{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          </div>
+          <div class="eg-pub-title">{{ p.title }}</div>
+          <div class="eg-pub-authors">{{ p.authors }}</div>
+          <div class="eg-pub-abstract">
+            <div class="eyebrow">Abstract — {{ p.conference_short }} {{ p.year }}</div>
+            <div class="tldr">{{ p.tldr | strip_newlines | strip }}</div>
+            {% if p.tags %}
+            <div class="eg-tags">{% for t in p.tags %}<span>{{ t }}</span>{% endfor %}</div>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      {% if site.google_scholar %}
+      <div class="eg-pubs-more">
+        <a class="eg-link" href="{{ site.google_scholar }}" target="_blank" rel="noopener">See all publications ↗</a>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+</div>

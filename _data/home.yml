@@ -1,0 +1,48 @@
+# Editorial Grid — home page content
+# Identity (name, position, affiliation, emails, links) lives in _config.yml.
+# Publications live in _data/publications.yml.
+
+about: >-
+  Ph.D. student at SOKENDAI, affiliated with the National Institute of
+  Informatics (NII). Advised by Saku Sugawara.
+
+advisor: Saku Sugawara
+
+interests:
+  - Scalable oversight
+  - Synthetic data generation
+
+news:
+  - date: Apr 2026
+    body: Our paper on scalable rubric-augmented reward modeling is accepted to ACL 2026.
+  - date: Mar 2025
+    body: Received the INMA 30 Under 30 Award for work bridging research and journalism.
+  - date: Sep 2024
+    body: Our paper on LLM-based rationale verification is accepted to EMNLP 2024.
+
+experience:
+  - span: Apr 2026 — present
+    role: Ph.D. student
+    org: SOKENDAI / NII
+    detail: "Department of Informatics. Supervisor: Saku Sugawara."
+  - span: Apr 2023 — Mar 2026
+    role: Research Engineer
+    org: The Asahi Shimbun Company
+    detail: R&D on LLM applications for journalism.
+
+education:
+  - span: Apr 2021 — Mar 2023
+    role: M.Eng.
+    org: Nara Institute of Science and Technology
+    detail: "Supervisor: Taro Watanabe."
+  - span: Apr 2016 — Mar 2021
+    role: B.A.
+    org: Hitotsubashi University
+
+awards:
+  - year: 2026
+    body: SOKENDAI Special Researcher Program, supported by JST BOOST.
+  - year: 2025
+    body: International News Media Association (INMA) 30 Under 30 Awards.
+  - year: 2023
+    body: Young Researcher's Encouragement Award, 29th Annual Meeting of the Association of Natural Language Processing.

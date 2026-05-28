@@ -1,0 +1,18 @@
+<div class="eg-wrap">
+  <section class="eg-section" data-reveal aria-labelledby="awards-title">
+    <div>
+      <div class="eg-sec-num">06 · Awards</div>
+      <h2 class="eg-sec-title" id="awards-title">Honors &amp; Scholarships</h2>
+    </div>
+    <div>
+      <ul class="eg-rows">
+        {% for a in site.data.home.awards %}
+        <li class="eg-award-row">
+          <span class="year">{{ a.year }}</span>
+          <span>{{ a.body }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>

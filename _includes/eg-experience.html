@@ -1,0 +1,32 @@
+<div class="eg-wrap">
+  <section class="eg-section" data-reveal aria-labelledby="exp-title">
+    <div>
+      <div class="eg-sec-num">05 · Experience</div>
+      <h2 class="eg-sec-title" id="exp-title">Work &amp; Study</h2>
+    </div>
+    <div>
+      <div class="eg-exp">
+        <div>
+          <div class="eg-col-label">Work</div>
+          {% for e in site.data.home.experience %}
+          <div class="eg-item">
+            <div class="span">{{ e.span }}</div>
+            <div class="role">{{ e.role }}</div>
+            <div class="org">{{ e.org }}{% if e.detail %} — {{ e.detail }}{% endif %}</div>
+          </div>
+          {% endfor %}
+        </div>
+        <div>
+          <div class="eg-col-label">Education</div>
+          {% for e in site.data.home.education %}
+          <div class="eg-item">
+            <div class="span">{{ e.span }}</div>
+            <div class="role">{{ e.role }}</div>
+            <div class="org">{{ e.org }}{% if e.detail %} — {{ e.detail }}{% endif %}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
