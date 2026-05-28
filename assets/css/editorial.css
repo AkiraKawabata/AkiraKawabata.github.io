@@ -130,12 +130,15 @@ button:focus-visible {
   column-gap: var(--space-6);
   row-gap: 40px;
   align-items: start;
-  grid-template-areas: "avatar profile interests";
+  grid-template-areas: ".  profile interests";
 }
-.eg-hero-avatar { grid-area: avatar; }
 .eg-hero-profile { grid-area: profile; }
 .eg-hero-interests { grid-area: interests; }
 
+/* Avatar removed for now; left rail kept empty to preserve grid alignment.
+   Restore by re-adding .eg-hero-avatar to eg-hero.html, mapping the "."
+   cell back to "avatar", and using the rules below. */
+.eg-hero-avatar { grid-area: avatar; }
 .eg-avatar {
   width: 140px;
   height: 140px;
@@ -491,7 +494,7 @@ button:focus-visible {
   .eg-hero {
     grid-template-columns: 140px 1fr;
     grid-template-areas:
-      "avatar profile"
+      ".      profile"
       "interests interests";
   }
 }
@@ -507,7 +510,6 @@ button:focus-visible {
   .eg-hero {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "avatar"
       "profile"
       "interests";
   }
