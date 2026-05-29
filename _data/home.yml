@@ -22,16 +22,15 @@ news:
     body: Our paper on LLM-based rationale verification is accepted to EMNLP 2024.
 
 experience:
+  - span: Apr 2023 — Mar 2026
+    role: Research Engineer
+    org: The Asahi Shimbun Company
+
+education:
   - span: Apr 2026 — present
     role: Ph.D. student
     org: SOKENDAI / NII
     detail: "Department of Informatics. Supervisor: Saku Sugawara."
-  - span: Apr 2023 — Mar 2026
-    role: Research Engineer
-    org: The Asahi Shimbun Company
-    detail: R&D on LLM applications for journalism.
-
-education:
   - span: Apr 2021 — Mar 2023
     role: M.Eng.
     org: Nara Institute of Science and Technology
