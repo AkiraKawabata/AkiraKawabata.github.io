@@ -1,18 +1,11 @@
-<div class="eg-wrap">
-  <section class="eg-section" data-reveal aria-labelledby="news-title">
-    <div>
-      <div class="eg-sec-num">News</div>
-      <h2 class="eg-sec-title" id="news-title">Recent</h2>
-    </div>
-    <div>
-      <ul class="eg-rows">
-        {% for n in site.data.home.news %}
-        <li class="eg-news-row">
-          <span class="date">{{ n.date }}</span>
-          <span>{{ n.body }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-</div>
+<section class="section" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <ul class="rows">
+    {% for n in site.data.home.news %}
+    <li class="row">
+      <span class="when">{{ n.date }}</span>
+      <span>{{ n.body }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

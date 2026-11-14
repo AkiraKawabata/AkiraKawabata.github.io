@@ -1,40 +1,22 @@
-<div class="eg-wrap">
-  <section class="eg-section" id="publications" data-reveal aria-labelledby="pubs-title">
-    <div>
-      <div class="eg-sec-num">Publications</div>
-      <h2 class="eg-sec-title" id="pubs-title">Papers</h2>
-    </div>
-    <div>
-      <div class="eg-pubs">
-        {% for p in site.data.publications.main %}
-        <a class="eg-pub" href="{{ p.pdf }}" target="_blank" rel="noopener"
-           data-venue="{{ p.conference_short }}" data-year="{{ p.year }}"
-           data-tldr="{{ p.tldr | strip_newlines | strip | replace: '"', '&quot;' }}"
-           data-tags="{{ p.tags | join: '|' }}">
-          <div class="eg-pub-thumb">
-            <img src="{{ p.image | replace: './', '/' | relative_url }}" alt="" loading="lazy">
-          </div>
-          <div class="eg-pub-meta">
-            <span>{{ p.conference_short }} · {{ p.year }}</span>
-            <span>№ {{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-          </div>
-          <div class="eg-pub-title">{{ p.title }}</div>
-          <div class="eg-pub-authors">{{ p.authors }}</div>
-          <div class="eg-pub-abstract">
-            <div class="eyebrow">Abstract — {{ p.conference_short }} {{ p.year }}</div>
-            <div class="tldr">{{ p.tldr | strip_newlines | strip }}</div>
-            {% if p.tags %}
-            <div class="eg-tags">{% for t in p.tags %}<span>{{ t }}</span>{% endfor %}</div>
-            {% endif %}
-          </div>
-        </a>
-        {% endfor %}
+<section class="section" id="publications" aria-labelledby="pubs-title">
+  <h2 id="pubs-title">Publications</h2>
+  <ol class="pubs">
+    {% for p in site.data.publications.main %}
+    <li class="pub">
+      <a class="pub-thumb" href="{{ p.pdf }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <img src="{{ p.image | replace: './', '/' | relative_url }}" alt="" loading="lazy">
+      </a>
+      <div class="pub-body">
+        <h3 class="pub-title"><a href="{{ p.pdf }}" target="_blank" rel="noopener">{{ p.title }}</a></h3>
+        <p class="pub-authors">{{ p.authors }}</p>
+        <p class="pub-venue">{{ p.conference_short }} {{ p.year }}{% if p.notes %} · {{ p.notes }}{% endif %}</p>
+        {% if p.tldr %}<p class="pub-tldr">{{ p.tldr | strip_newlines | strip }}</p>{% endif %}
+        <p class="pub-links">
+          {% if p.paper %}<a href="{{ p.paper }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+          {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+        </p>
       </div>
-      {% if site.google_scholar %}
-      <div class="eg-pubs-more">
-        <a class="eg-link" href="{{ site.google_scholar }}" target="_blank" rel="noopener">See all publications ↗</a>
-      </div>
-      {% endif %}
-    </div>
-  </section>
-</div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

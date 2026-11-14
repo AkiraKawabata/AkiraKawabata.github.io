@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}" class="no-js">
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>document.documentElement.classList.replace('no-js', 'js');</script>
+    <meta name="color-scheme" content="light dark">
 
     {% seo %}
     {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
@@ -18,20 +17,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Inter:wght@300;400;500&family=Geist+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ '/assets/css/editorial.css' | relative_url }}">
   </head>
   <body>
-    <div class="eg-root">
-      {% include eg-nav.html %}
+    <div class="page">
       <main>
         {{ content }}
       </main>
       {% include eg-footer.html %}
     </div>
-
-    <script src="{{ '/assets/js/interactions.js' | relative_url }}"></script>
 
     {% if site.google_analytics %}
     <script>

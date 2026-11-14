@@ -1,29 +1,20 @@
-<div class="eg-wrap">
-  <section class="eg-hero" data-reveal aria-label="Profile">
-    <div class="eg-hero-profile">
-      <div class="eg-eyebrow">Profile</div>
-      <h1 class="eg-name">Akira<br>Kawabata</h1>
-      <p class="eg-about">{{ site.data.home.about }}</p>
-      <dl class="eg-meta">
-        <dt>Email</dt><dd class="mono">{{ site.email }}</dd>
-      </dl>
+<header class="hero">
+  <div class="hero-top">
+    {% if site.avatar %}<img class="avatar" src="{{ site.avatar | replace: './', '/' | relative_url }}" alt="Portrait of {{ site.title }}" width="88" height="88">{% endif %}
+    <div>
+      <h1 class="name">{{ site.title }}</h1>
+      <p class="about">{{ site.data.home.about }}</p>
+      {% if site.data.home.interests %}
+      <p class="interests"><span class="label">Research interests</span> {{ site.data.home.interests | join: ', ' }}</p>
+      {% endif %}
     </div>
-
-    <div class="eg-hero-interests">
-      <div class="eg-eyebrow">Research Interests</div>
-      <ul class="eg-interests">
-        {% for it in site.data.home.interests %}
-        <li>
-          <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-          <span class="label">{{ it }}</span>
-        </li>
-        {% endfor %}
-      </ul>
-      <div class="eg-ctas">
-        {% if site.cv_link %}<a class="eg-btn eg-btn--primary" href="{{ site.cv_link | relative_url }}">Curriculum Vitae ↗</a>{% endif %}
-        {% if site.google_scholar %}<a class="eg-btn" href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
-        {% if site.github_link %}<a class="eg-btn" href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      </div>
-    </div>
-  </section>
-</div>
+  </div>
+  <ul class="links">
+    {% assign emails = site.email | split: ' / ' %}
+    {% for e in emails %}<li><a href="mailto:{{ e | strip }}">{{ e | strip }}</a></li>{% endfor %}
+    {% if site.cv_link %}<li><a href="{{ site.cv_link | relative_url }}">CV</a></li>{% endif %}
+    {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>{% endif %}
+    {% if site.github_link %}<li><a href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
+    {% if site.linkedin %}<li><a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+  </ul>
+</header>
