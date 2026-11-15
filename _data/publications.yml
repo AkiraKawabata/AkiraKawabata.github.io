@@ -50,8 +50,9 @@ main:
     tldr: >-
       We build a benchmark, based on multiple-choice logical reasoning
       questions, that tests whether models can evaluate the rationales behind
-      answers. The gap to humans is largest for rationales explaining why the
-      incorrect answers are wrong.
+      answers. The gap to humans is largest in judging why the incorrect
+      answers are wrong, which suggests that choosing the right answer does
+      not imply understanding the reasoning behind it.
     tags:
       - evaluation
       - reasoning
