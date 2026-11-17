@@ -9,6 +9,7 @@ main:
     paper: https://aclanthology.org/2026.acl-long.523/
     code: https://github.com/asahi-research/C2
     image: ./assets/img/c2.png
+    notes: Oral
     tldr: >-
       We show that rubric planning and verification behaviors can be
       synthesized from simple binary preferences. The resulting
